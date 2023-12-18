@@ -4,6 +4,10 @@ from pygame.locals import *
 #Variables
 background_colour = (255,255,255)
 
+#Initializes
+pygame.font.init
+TitleFont = pygame.font.StsFont('Arial', 20)
+
 #Start Screen
 StartScreen = pygame.display.set_mode((750,750))
 StartScreen.fill(background_colour)
