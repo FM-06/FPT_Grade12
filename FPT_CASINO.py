@@ -28,7 +28,7 @@ while screen == "START":
            screen = "END"
         #Title
         pygame.draw.rect(StartScreen, (246,207,67), [175,85,425,100],0)
-        StartScreen.blit(Title, (200,100))
+        StartScreen.blit(Title, (195,100))
 
         #Games Button
         pygame.draw.rect(StartScreen, (246,207,67), pygame.Rect(240, 295, 300, 60),  2)  
