@@ -16,7 +16,12 @@ pygame.display.flip()
 
 #Font
 TitleFont = pygame.font.SysFont("NeonFont.otf", 100)
+ButtonFont = pygame.font.SysFont("NeonFont.otf", 75)
 Title = TitleFont.render("PythonBets", True, (50,100,148))
+
+#Buttons
+GameButton = ButtonFont.render("Games", True, (246,207,67))
+WalletButton = ButtonFont.render("Wallet", True, (246,207,67))
 
 
 #Running variable to check if code should run
@@ -31,6 +36,11 @@ while screen == "START":
         StartScreen.blit(Title, (195,100))
 
         #Games Button
-        pygame.draw.rect(StartScreen, (246,207,67), pygame.Rect(240, 295, 300, 60),  2)  
+        pygame.draw.rect(StartScreen, (246,207,67), pygame.Rect(240, 295, 300, 60),  2) 
+        StartScreen.blit(GameButton, (300,300))
+
+        #Wallet Button
+        pygame.draw.rect(StartScreen, (246,207,67), pygame.Rect(240, 400, 300, 60),  2)
+        StartScreen.blit(WalletButton, (310,405))
         #Wallet Button
         pygame.display.flip()
